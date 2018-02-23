@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Within this Activity the user has the option to select various artist names from the music they currently have downloaded on that specific device. Pressing on the 'Back-to-Library will return user to main music page."/>
+
+    <TextView
+        android:id="@+id/bob_marley"
+        style="@style/textView"
+        android:layout_weight="2"
+        android:text="Bob Marley" />
+
+    <TextView
+        android:id="@+id/drowning_pool"
+        style="@style/textView"
+        android:layout_weight="2"
+        android:text="Drowning Pool" />
+
+    <TextView
+        android:id="@+id/hollywood_undead"
+        style="@style/textView"
+        android:layout_weight="2"
+        android:text="Hollywood Undead" />
+
+    <TextView
+        android:id="@+id/jagged_edge"
+        style="@style/textView"
+        android:layout_weight="2"
+        android:text="Jagged Edge" />
+
+    <TextView
+        android:id="@+id/back_to_library"
+        style="@style/textView"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_weight="0"
+        android:text="Back-to-Library" />
+
+</LinearLayout>

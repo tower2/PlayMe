@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.example.android.playme.PlayMePlayer">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Within this Activity the user can play the music selection they chose. Pressing on the 'Back-to-Library will return user to main music page."/>
+
+    <TextView
+        android:id="@+id/display_artist_album"
+        style="@style/textView"
+        android:textSize="32sp"
+        android:layout_margin="40dp"
+        android:text="Artist Name/ Album"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/back_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:background="@drawable/glossy_skip_back"/>
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:background="@drawable/music_play"/>
+        <Button
+            android:id="@+id/forward_skip"
+            android:layout_width="wrap_content"
+            android:paddingTop="23dp"
+            android:layout_height="190dp"
+            android:layout_weight="35"
+            android:background="@drawable/glossy_skip_forward"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <TextView
+        android:id="@+id/back_to_library"
+        style="@style/textView"
+        android:layout_alignParentBottom="true"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_weight="0"
+        android:text="Back-to-Library" />
+    </RelativeLayout>
+
+</LinearLayout>

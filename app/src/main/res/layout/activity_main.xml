@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F8F8"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Within this Activity the user has the option to select artist name, album name, or purchase additional music from the master music library from the music they currently have downloaded on that specific device. Pressing on the 'Back-to-Library will return user to main music page."/>
+
+    <TextView
+        android:id="@+id/artist_textView"
+        style="@style/textView"
+        android:text="@string/artist_name" />
+
+    <TextView
+        android:id="@+id/album_textView"
+        style="@style/textView"
+        android:text="@string/album_name" />
+
+    <TextView
+        android:id="@+id/purchase_textView"
+        style="@style/textView"
+        android:text="Purchase" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/blast_music_note"/>
+    </RelativeLayout>
+
+</LinearLayout>
